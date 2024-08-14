@@ -1,0 +1,598 @@
+* Общие стили для всего сайта */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #eaf7e9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #3b7d3e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #cce5cc;
+}
+
+/* Стили для разделов */
+section {
+    padding: 60px 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    color: #3b7d3e;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+section ul {
+    list-style-type: disc;
+    margin: 20px;
+    padding-left: 40px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Стили для изображений */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Стили для отзывов */
+.testimonial {
+    background-color: #f2f9f2;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #3b7d3e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    font-weight: bold;
+    color: #3b7d3e;
+}
+
+/* Стили для формы регистрации */
+form {
+    background-color: #f2f9f2;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #3b7d3e;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #3b7d3e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2f6432;
+}
+
+/* Контакты */
+#contacts p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#contacts a {
+    color: #3b7d3e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#contacts a:hover {
+    color: #2f6432;
+}
+
+/* Подвал */
+footer {
+    background-color: #3b7d3e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    .social-icons img {
+        width: 25px;
+    }
+}
+
+.cta-button {
+    background-color: #3b7d3e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #2f6432;
+}
+
+#about {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    margin: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    font-size: 2.5em;
+    color: #3b7d3e;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about h3 {
+    font-size: 2em;
+    color: #3b7d3e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#about p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#about ul li {
+    font-size: 1.1em;
+    color: #333;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+#about ul li strong {
+    color: #3b7d3e;
+    font-weight: bold;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    #about h2 {
+        font-size: 2em;
+    }
+
+    #about h3 {
+        font-size: 1.5em;
+    }
+
+    #about p {
+        font-size: 1.1em;
+    }
+
+    #about ul li {
+        font-size: 1em;
+    }
+}
+
+#contacts {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#contacts h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#contacts p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+#contacts p a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contacts p a:hover {
+    color: #0056b3;
+}
+
+#contacts img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+/* Секция Услуги */
+.service-section {
+    background-color: #E8F5E9;
+}
+
+.service-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #A5D6A7;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    margin-top: 0;
+}
+
+/* Анимация */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Адаптивность - как было ранее */
+
+.img-hover {
+    overflow: hidden;
+}
+
+.img-hover img {
+    transition: transform 0.3s ease;
+}
+
+.img-hover:hover img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.faq-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq-question {
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    margin: 15px 0;
+    position: relative;
+}
+
+.faq-answer {
+    display: none; /* Ответы скрыты по умолчанию */
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.faq-question::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    content: "-";
+    transform: rotate(45deg);
+}
+
+/* Начальные стили для анимации */
+.service-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Стили для эффекта hover */
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+/* Когда элемент виден в окне просмотра, применяются эти стили */
+.service-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#contacts {
+    text-align: center;
+    padding: 20px;
+}
+
+#contacts h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+#contacts p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+#contacts a {
+    color: #009688;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contacts a:hover {
+    color: #00796b;
+}
+
+.contact-image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.contact-image-wrapper img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.contact-image-wrapper:hover img {
+    opacity: 0.3;
+}
+
+.contact-image-wrapper:hover .contact-overlay {
+    opacity: 1;
+}
+
+/* Анимация иконок социальных сетей */
+#contacts a:hover {
+    color: #59ff22;
+    transform: scale(1.1);
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.feature-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box img {
+    max-width: 50px;
+    margin-bottom: 15px;
+}
+
+.feature-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-box p {
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+        padding: 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
